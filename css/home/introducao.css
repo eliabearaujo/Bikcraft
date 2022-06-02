@@ -1,0 +1,53 @@
+.introducao-bg {
+  background: var(--cor-12);
+  box-shadow: inset 0 -120px var(--cor-0); /*Essa é uma outra solução para a imagem vazando, criar uma sobra interna no conteudo de 120px e acrescentar 120 px no padding para que o conteudo não vaze. */
+}
+.introducao {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0px 40px;
+}
+/* Essa é uma solução para fazer com que a imagem vaze a div, o problema é o conteudo que vem depois dessa div que pode vir a ficar debaixo da imagem. */
+/* .introducao-conteudo {
+  align-self: end;
+  padding-bottom: 80px;
+}
+.introducao-imagem {
+  margin-bottom: -120px;
+} */
+.introducao-conteudo {
+  align-self: end;
+  padding-bottom: 200px;
+}
+.introducao img {
+  height: 100%;
+  object-fit: cover;
+}
+.introducao h1 {
+  margin-bottom: 32px;
+}
+
+.introducao p {
+  margin-bottom: 20px;
+}
+@media (max-width: 800px) {
+  .introducao-bg {
+    background: var(--cor-11);
+    padding-top: 40px;
+    box-shadow: inset 0 -60px var(--cor-0);
+  }
+  .introducao {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  .introducao-conteudo {
+    padding-bottom: 0px;
+  }
+  .introducao h1 {
+    margin-bottom: 16px;
+  }
+  .introducao img {
+    height: 300px;
+    width: 100%;
+  }
+}

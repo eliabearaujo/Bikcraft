@@ -1,79 +1,14 @@
-body {
-  margin: 0px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0px;
-}
-ul {
-  list-style: none;
-  text-decoration: none;
-  margin: 0px;
-  padding: 0px;
-}
-a {
-  text-decoration: none;
-}
-.header-bg {
-  background: #000000;
-}
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  box-sizing: border-box;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-.header-menu {
-  display: flex;
-  gap: 40px;
-  flex-wrap: wrap;
-}
-.header-menu a {
-  padding: 16px 0px;
-  display: inline-block;
-  color: #ffffff;
-  font-size: 18px;
-  position: relative;
-}
-.header-menu a::after {
-  content: "";
-  display: block;
-  width: 0px;
-  height: 2px;
-  background: #ffffff;
-  margin-top: 4px;
-  transition: 0.3s;
-  position: absolute;
-}
-.header-menu a:hover::after {
-  width: 100%;
-}
-@media (max-width: 800px) {
-  .header-menu {
-    gap: 20px;
-  }
-  .header-menu a {
-    background: #111111;
-    padding: 12px 16px;
-    border-radius: 4px;
-  }
-  .header-menu a {
-    background-color: #2e2e2e;
-  }
-  .header a::after {
-    display: none;
-  }
-}
-@media (max-width: 600px) {
-  .header-menu {
-    gap: 12px;
-  }
-  .header-menu a {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
-}
+@import url(./global/header.css);
+@import url(./utilidades/tipografia.css);
+@import url(./utilidades/cores.css);
+
+@import url(./global/global.css);
+
+/* Utilidades */
+@import url(./utilidades/componentes.css);
+
+/* Home */
+@import url(./home/introducao.css);
+@import url(./home/tecnologia.css);
+/* Bicicletas */
+@import url(./bicicletas/bicicletas-lista.css);
